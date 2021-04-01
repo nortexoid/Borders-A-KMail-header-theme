@@ -1,6 +1,6 @@
 # Borders: A KMail header theme
 
-![alt text](https://github.com/nortexoid/ Borders-A-KMail-header-theme/Screenshot.png)
+![alt text](Screenshot.png)
 
 This header theme is a mild variation of the theme "KMail 5.2" that seems to ship by default (at least on most distros). It better separates the header and body of the message and looks better to my eye.
 
