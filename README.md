@@ -2,7 +2,7 @@
 
 ![alt text](Borders_screenshot.png)
 
-This header theme is a mild variation of the theme "KMail 5.2" that seems to ship by default (at least on most distros). It better separates the header and body of the message and looks better to my eye.
+This header theme is a mild variation of the default theme "KMail 5.2". It better separates the header and body of the message and looks nicer to my eye.
 
 Changes:
 - Header and body given borders with 6px radius and shadows
