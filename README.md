@@ -7,7 +7,7 @@ This header theme is a mild variation of the default theme "KMail 5.2". It bette
 Changes:
 - Header and body given borders with 6px radius and shadows
 - Subject title font size reduced and given a weight of 500 (from normal = 400)
-- Date weight reduced to normal (from bold) and made black for better contrast
+- Date font weight reduced to normal (from bold) and made black for better contrast
 - No hardcoded colors
 - Minimum padding so that screen space isn't wasted
 
