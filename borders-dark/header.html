@@ -1,0 +1,91 @@
+<link href="{{ header.absoluteThemePath }}/style.css" rel="stylesheet" type="text/css" />
+<div id="kmailPage">
+<div id="headerbox" dir="ltr">
+        <div id="subject" dir="{{ header.subjectDir }}">{{ header.subject|safe }}</div>
+	<div id="photo">
+		{% if header.photourl %}
+		<img src="{{ header.photourl }}" width="{{ header.photowidth }}" height="{{ header.photoheight }}" />
+		{% else %}
+		<img src="{{ header.absoluteThemePath }}/photo.svg" width="{{ header.photowidth }}" height="{{ header.photoheight }}" />
+		{% endif %}
+	</div>
+	<div class="table">
+		<div class="row">
+			<div class="headerleft">{{ header.fromi18n }}</div>
+			<div class="headerright">
+				{{ header.from.fullAddress|safe }}
+				{% if header.vcardname %}
+				<a href="{{ header.vcardname|safe }}">{{ header.vcardi18n }}</a>
+				{% endif %}
+				{% if header.organization %}
+				({{ header.organization|safe }})
+				{% endif %}
+				{% if header.resentFrom.isSet %}
+				{{ header.resentFromi18n }} {{ header.resentFrom.fullAddress|safe }}
+				{% endif %}
+			</div>
+		</div>
+                {% if header.to.isSet %}
+		<div class="row">
+			<div class="headerleft">{{ header.toi18n }}</div>
+			<div class="headerright">{{ header.to.expandableTo|safe }}</div>
+		</div>
+                {% endif %}
+		{% if header.cc.isSet %}
+		<div class="row">
+			<div class="headerleft">{{ header.cci18n }}</div>
+			<div class="headerright">{{ header.cc.expandableCc|safe }}</div>
+		</div>
+		{% endif %}
+		{% if header.bcc.isSet %}
+		<div class="row">
+			<div class="headerleft">{{ header.bcci18n }}</div>
+			<div class="headerright">{{ header.bcc.fullAddress|safe }}</div>
+		</div>
+		{% endif %}
+		{% if header.sender.isSet %}
+		<div class="row">
+			<div class="headerleft">{{ header.senderi18n }}</div>
+			<div class="headerright">{{ header.sender.fullAddress|safe }}</div>
+		</div>
+		{% endif %}
+		{% if header.listid %}
+		<div class="row">
+			<div class="headerleft">{{ header.listidi18n }}</div>
+			<div class="headerright">{{ header.listid }}</div>
+		</div>
+		{% endif %}
+		<div class="row">
+			<div class="headerleft">{{ header.datei18n }}</div>
+			<div class="headerright date" dir="{{ header.applicationDir }}">{{ header.date.short }}</div>
+		</div>
+		{% if header.spamHTML %}
+		<div class="row">
+			<div class="headerleft nowrap">{{ header.spamstatusi18n }}</div>
+			<div class="headerright">{{ header.spamHTML|safe }}</div>
+		</div>
+		{% endif %}
+		{% if header.messageHasSecurityInfo %}
+		<div class="row">
+                        <div class="headerleft">{{ header.messageHasSecurityInfoI18n }}</div>
+			<div class="headerright">
+			{% if header.messageIsSigned %}
+			     {{ header.signedIcon|safe }}
+			{% endif %}
+		        {% if header.messageIsEncrypted %}
+                             {{ header.encryptedIcon|safe }}
+                        {% endif %}	
+                        </div>
+		</div>
+		{% endif %}
+                {% if header.hasAttachment %}
+                <div class="row">
+                        <div class="headerleft">{{ header.attachmentI18n }}</div>
+                        <div class="headerright">{{ header.attachmentHtml|safe }}</div>
+                </div>
+                {% endif %}
+
+        </div>
+        </div>
+</div>
+<div id="kmailContent">
