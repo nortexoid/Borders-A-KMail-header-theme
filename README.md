@@ -11,4 +11,4 @@ Changes:
 - No hardcoded colors (for the light theme--dark uses hardcoded gray background color)
 - Minimum padding so that screen space isn't wasted
 
-To install, copy the folder "borders" or "boders-dark" to ~/.local/share/messageviewer/themes/, restart KMail, and select the header theme "Borders" or "Borders Dark".
+To install, copy the folder "borders" (or one of its variants) to ~/.local/share/messageviewer/themes/, restart KMail, and select the header theme "Borders" (or one of its variants).
