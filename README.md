@@ -2,7 +2,7 @@
 
 ![alt text](Screenshot.png)
 
-This header theme is a mild variation of the default theme "KMail 5.2". It better separates the header and body of the message and looks nicer to my eye. There's a light, a dark, and a flat version (not pictured).
+This header theme is a mild variation of the default theme "KMail 5.2". It better separates the header and body of the message and looks nicer to my eye. There's a light and dark version, plus flat versions of these (not pictured).
 
 Changes:
 - Header and body given borders with 6px radius and shadows (no shadow for the flat version)
