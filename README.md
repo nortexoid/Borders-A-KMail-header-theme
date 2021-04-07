@@ -2,10 +2,10 @@
 
 ![alt text](Screenshot.png)
 
-This header theme is a mild variation of the default theme "KMail 5.2". It better separates the header and body of the message and looks nicer to my eye. There's a light version and a dark version.
+This header theme is a mild variation of the default theme "KMail 5.2". It better separates the header and body of the message and looks nicer to my eye. There's a light, a dark, and a flat version (not pictured).
 
 Changes:
-- Header and body given borders with 6px radius and shadows
+- Header and body given borders with 6px radius and shadows (no shadow for the flat version)
 - Subject title font size reduced and given a weight of 500 (from normal = 400)
 - Date font weight reduced to normal (from bold) and made black for better contrast
 - No hardcoded colors (for the light theme--dark uses hardcoded gray background color)
