@@ -3,7 +3,7 @@
 ![alt text](Screenshot.png)
 ![alt text](Borders_Flat.png)
 
-(The flat theme screenshot shows a slightly modded version for my own set-up and tastes.)
+(The flat theme screenshot shows a slightly modded version for my own set-up and tastes (such as a larger avatar to the right).)
 
 This header theme is a mild variation of the default theme "KMail 5.2". It better separates the header and body of the message and looks nicer to my eye. There's a light and dark version, plus flat versions of these (not pictured).
 
